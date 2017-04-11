@@ -1,10 +1,10 @@
 # codalab_bash
 A couple of useful codalab bash commands.
 
-## `cl_bookmark`
+### `cl_bookmark`
 This command will save info about the currently-active worksheet.
 
-## `cl_workhere`
+### `cl_workhere`
 This command will set the currently-active worksheet to the one specified by a previous `cl_bookmark` command.
 
 These commands us a hidden "dot-file" (`.cl_worksheet` by default) in the local dir to record the bookmark info.
