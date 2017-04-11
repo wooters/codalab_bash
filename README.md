@@ -18,8 +18,8 @@ if [ -f "${HOME}/projects/codalab_bash/codalab_bash.sh" ]; then
 fi
 ```
 
-## Integration with (bash-git-prompt)[https://github.com/magicmonty/bash-git-prompt]
-If you are using (bash-git-prompt)[https://github.com/magicmonty/bash-git-prompt] you can include
+## Integration with [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
+If you are using [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt) you can include
 information about the currently-bookmarked worksheet into the prompt. This is done using the
 `prompt_callback` function of `bash-git-prompt`. For example, if you have installed `bash-git-prompt`
 via homebrew:
