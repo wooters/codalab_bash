@@ -53,4 +53,7 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 ```
+This will add the name and partial UUID of the currently-bookmarked worksheet into your prompt. And if the
+bookmarked worksheet is not the same as the currently-active worksheet, the info in the prompt will
+appear in "BoldRed" to alert you to the inconsistency.
 
