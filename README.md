@@ -21,8 +21,9 @@ fi
 ## Integration with [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
 If you are using [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt) you can include
 information about the currently-bookmarked worksheet into the prompt. This is done using the
-`prompt_callback` function of `bash-git-prompt`. For example, if you have installed `bash-git-prompt`
-via homebrew:
+`prompt_callback` function of `bash-git-prompt`.
+
+For example, if you have installed `bash-git-prompt` via homebrew on a Mac:
 
 ``` bash
 if [ -f "${HOME}/projects/codalab_bash/codalab_bash.sh" ]; then
@@ -55,5 +56,7 @@ fi
 ```
 This will add the name and partial UUID of the currently-bookmarked worksheet into your prompt. And if the
 bookmarked worksheet is not the same as the currently-active worksheet, the info in the prompt will
-appear in "BoldRed" to alert you to the inconsistency.
+appear in "BoldRed" to alert you to the inconsistency:
+
+![Example](git_prompt.png)
 
