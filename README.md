@@ -11,7 +11,10 @@ Both `cl_bookmark` and `cl_workhere` use a hidden "dot-file" (`.cl_worksheet` by
 local dir to record the bookmark info.
 
 ### `cl_comment`
-This command will add a comment at the end of the currently-active worksheet. For example,
+This command will add a comment at the end of the currently-active worksheet. (This is basically just a 
+wrapper around `cl add text "comment" .`) 
+
+For example,
 
 ``` bash
 $ cl_comment "This is a comment"
