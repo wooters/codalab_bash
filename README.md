@@ -20,7 +20,7 @@ For example,
 $ cl_comment "This is a comment"
 ```
 
-You can also add the text from a file as the comment:
+You can also add the text from a file:
 
 ``` bash
 $ cat tmp.txt
