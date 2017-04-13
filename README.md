@@ -7,7 +7,29 @@ This command will save info about the currently-active worksheet.
 ### `cl_workhere`
 This command will set the currently-active worksheet to the one specified by a previous `cl_bookmark` command.
 
-These commands us a hidden "dot-file" (`.cl_worksheet` by default) in the local dir to record the bookmark info.
+Both `cl_bookmark` and `cl_workhere` use a hidden "dot-file" (`.cl_worksheet` by default) in the
+local dir to record the bookmark info.
+
+### `cl_comment`
+This command will add a comment at the end of the currently-active worksheet. For example,
+
+``` bash
+$ cl_comment "This is a comment"
+```
+
+You can also add the text from a file as the comment:
+
+``` bash
+$ cat tmp.txt
+This is a *multi-line* comment.
+It includes codalab `markdown`
+
+    Indented code block
+
+$ cl_comment "$(cat tmp.txt)"
+```
+which would look like this in the rendered codalab worksheet:
+![cl_comment example](cl_comment.png)
 
 ## Installation
 Clone this repo locally and add something like the following to your `.bashrc`:
@@ -58,5 +80,5 @@ This will add the name and partial UUID of the currently-bookmarked worksheet in
 bookmarked worksheet is not the same as the currently-active worksheet, the info in the prompt will
 appear in "BoldRed" to alert you to the inconsistency:
 
-![Example](git_prompt.png)
+![git prompt example](git_prompt.png)
 

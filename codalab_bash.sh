@@ -201,3 +201,13 @@ function cl_bookmark {
     echo "Saving active worksheet info to: $CL_LOCAL_WS_INFO_FILE"
     echo "${ws_info}" > "${CL_LOCAL_WS_INFO_FILE}"
 }
+
+function cl_comment {
+    # adds a comment (text), given as the first arg, to the currently-active worksheet
+    if [[ $# -eq 1 ]]; then
+        cl add text "$1" .
+    else
+        echo "Need to supply one (and only one) argument. (Try adding quotes?)" >&2
+        return $__CL_FAILURE
+    fi
+}
