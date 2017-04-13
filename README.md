@@ -33,6 +33,7 @@ $ cl_comment "$(cat tmp.txt)"
 ```
 which would look like this in the rendered codalab worksheet:
 ![cl_comment example](cl_comment.png)
+<img src="cl_comment.png" width="300">
 
 ## Installation
 Clone this repo locally and add something like the following to your `.bashrc`:
